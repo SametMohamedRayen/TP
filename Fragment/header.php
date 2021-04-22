@@ -30,7 +30,7 @@ include_once "autoload.php";
         </li>
         <li class="nav-item">
             <form>
-                <button class="btn btn-danger" style="margin-left:930px;" type="submit" formaction="../logout.php">Logout</button>
+                <button class="btn btn-danger" style="margin-left:920px;" type="submit" formaction="../logout.php">Logout</button>
             </form>
         </li>
         <?php } ?>
