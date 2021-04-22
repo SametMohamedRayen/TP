@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f762312-4940-49f1-a815-9efdfccf930b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Classes/HistoriqueRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/PersonneRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/PersonneRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fragment/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/Fragment/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajoutProcess.php" beforeDir="false" afterPath="$PROJECT_DIR$/ajoutProcess.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/history.php" beforeDir="false" afterPath="$PROJECT_DIR$/history.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loginProcess.php" beforeDir="false" afterPath="$PROJECT_DIR$/loginProcess.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/logout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modif.php" beforeDir="false" afterPath="$PROJECT_DIR$/modif.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modifProcess.php" beforeDir="false" afterPath="$PROJECT_DIR$/modifProcess.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/suppProcess.php" beforeDir="false" afterPath="$PROJECT_DIR$/suppProcess.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +37,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1619097667378</updated>
-      <workItem from="1619097668576" duration="12279000" />
+      <workItem from="1619097668576" duration="12368000" />
+      <workItem from="1619129435160" duration="683000" />
+      <workItem from="1619131477444" duration="877000" />
     </task>
     <servers />
   </component>
