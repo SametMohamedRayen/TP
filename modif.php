@@ -46,7 +46,7 @@ $personneRepo = $personneRepo->get("cin = ".$cin);
             <label for="exampleInputFile">Ajouter Image</label>
             <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp" name="photo" >
             <br>
-            <img  alt="pic" id ="photo" src= "<?= $personneRepo[0]->photo ?>">
+            <img  alt="pic" id ="photo" src= "<?= $personneRepo[0]->photo ?>" style="width: 100px;height: 100px;">
             <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
         </div>
         <label>

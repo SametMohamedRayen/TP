@@ -16,7 +16,8 @@ if((isset($_FILES['photo']) && ($_FILES['photo']) != "") && ($_FILES['photo']['n
         $personne = new PersonneRepository();
         $personne->ajoutPersonne($nom,$prenom,$section,$age,$cin,$path);
         unset($_SESSION["bdError"]);
-        $_COOKIE['history'] += (["Personne ".$nom." ".$prenom." est ajouté at ".date("Y/m/d H:i")."."]);
+        $histo = new HistoriqueRepository();
+        $histo->ajout(" est ajouté ",date("Y/m/d H:i"),"Personne ".$nom." ".$prenom);
         header("location:home.php");
 }
 else{

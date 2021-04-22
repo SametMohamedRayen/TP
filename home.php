@@ -5,6 +5,9 @@ include_once("Fragment/header.php");
 $personneRepo = new PersonneRepository();
 $personneRepo = $personneRepo->getAll();
 
+$histo = new HistoriqueRepository();
+$histo->ajout(" a consulté le Home ",date("Y/m/d H:i"),"Admin");
+
 $i=0;
 
 ?>

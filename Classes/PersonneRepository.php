@@ -23,8 +23,7 @@ class PersonneRepository extends Repository
     public function modifPersonne($nom,$prenom,$section,$age,$cin,$path,$old_cin)
     {
         try {
-            if($path == '')
-            $query = "update " .$this->tableName. " set nom = ? , prenom = ?,section = ?,age = ?,cin=?,photo = ?"."  where cin = ".$old_cin;
+            $query = "update " .$this->tableName. " set nom = ? , prenom = ?,section = ?,age = ?,cin=?,photo = ?  where cin = ".$old_cin;
             $response = $this->bd->prepare($query);
             $response->execute([$nom, $prenom, $section, $age, $cin, $path]);
         }

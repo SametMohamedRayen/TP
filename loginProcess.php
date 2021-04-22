@@ -2,10 +2,6 @@
 session_start();
 include_once ("Classes/BDConnect.php");
 include_once "autoload.php";
-if(!isset($_COOKIE['history']))
-{
-    setcookie("history","",time()+60*60*24*365,"uploads");
-}
 
 $login = $_POST['email'];
 $pwd = $_POST['password'];
@@ -18,12 +14,13 @@ if((!isset($login)) || (!isset($pwd)) || $login =="" || $pwd =="")
 }
 
 $userRepo = new UserRepository();
+$histo = new HistoriqueRepository();
 
 if($userRepo->verifAdmin($login,$pwd))
 {
     $_SESSION['is_connected'] = true;
     unset($_SESSION['login_error']);
-    $_COOKIE['history'] +=(["User _anonymous_ logged in at ".date("Y/m/d H:i")."."]);
+    $histo->ajout(" logged in ",date("Y/m/d H:i"),"Admin");
     header("location:home.php");
 }
 else

@@ -22,18 +22,15 @@ include_once "autoload.php";
                 <span class="sr-only">(current)</span>
             </a>
         </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://<?=$_SERVER["HTTP_HOST"]?>/ajout.php">Ajouter</a>
+            </li>
         <li class="nav-item">
-            <a class="nav-link" href="http://<?=$_SERVER["HTTP_HOST"]?>/ajout.php">Ajouter</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="http://<?=$_SERVER["HTTP_HOST"]?>/modif.php">Modifier</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="http://<?=$_SERVER["HTTP_HOST"]?>/supp.php">Supprimer</a>
+            <a class="nav-link" href="http://<?=$_SERVER["HTTP_HOST"]?>/history.php">History</a>
         </li>
         <li class="nav-item">
             <form>
-                <button class="btn btn-danger" style="margin-left:775px;" type="submit" formaction="../logout.php">Logout</button>
+                <button class="btn btn-danger" style="margin-left:930px;" type="submit" formaction="../logout.php">Logout</button>
             </form>
         </li>
         <?php } ?>

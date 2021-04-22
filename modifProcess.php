@@ -19,8 +19,9 @@ if((isset($_FILES['photo']) && ($_FILES['photo']) != "") && ($_FILES['photo']['n
 }
 $personne->modifPersonne($nom,$prenom,$section,$age,$cin,$path,$old_cin);
 
+$histo = new HistoriqueRepository();
+$histo->ajout(" est modifé ",date("Y/m/d H:i"),"Personne ".$nom." ".$prenom);
 
-$_COOKIE['history'] += (["Personne ".$nom." ".$prenom." est modifié at ".date("Y/m/d H:i")."."]);
 header("location:home.php");
 
 

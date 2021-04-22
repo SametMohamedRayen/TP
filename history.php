@@ -1,8 +1,15 @@
 <?php
 include_once "Fragment/header.php";
+include_once "autoload.php";
+$histoRepo = new HistoriqueRepository();
+$histoRepo->ajout(" a consulté historique ",date("Y/m/d H:i"),"Admin");
+$histoRepo = $histoRepo->getAll();
 
 ?>
+<br>
+<div class="container">
 <h2>History</h2>
+</div>
 
 <table class="table table-hover">
   <thead>
@@ -12,10 +19,12 @@ include_once "Fragment/header.php";
   </thead>
   <tbody>
   <?php
-      foreach($_COOKIE["history"] as $val) {?>
-<tr class="table-info">
-      <th scope="row"><?=$val?></th>
-    </tr>
-  <?php }?>
+  foreach ($histoRepo as $value)
+  {
+      ?>
+  <tr class="table-info">
+      <th scope="row"><?=$value->who." ".$value->action." at ".$value->date."." ?></th>
+ <?php }
+  ?>
   </tbody>
 </table>
