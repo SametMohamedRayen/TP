@@ -1,4 +1,5 @@
 <?php
+$title = "History";
 include_once "Fragment/header.php";
 include_once "autoload.php";
 $histoRepo = new HistoriqueRepository();
